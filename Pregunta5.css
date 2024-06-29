@@ -1,0 +1,29 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 0.4fr 1.6fr;
+    grid-template-rows: 0.5fr 1.5fr 0.5fr 1.5fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "MENU MENU MENU"
+      "NOMBRE NOMBRE NOMBRE"
+      "SLIDES SLIDES SLIDES"
+      "SLIDES SLIDES SLIDES"
+      "INFORMACION INFORMACION IMAGENES"
+      "INFORMACION INFORMACION IMAGENES";
+  }
+  
+  .MENU { grid-area: MENU; }
+  
+  .NOMBRE { grid-area: NOMBRE; }
+  
+  .INFORMACION { grid-area: INFORMACION; }
+  
+  .IMAGENES { grid-area: IMAGENES; }
+  
+  .SLIDES { grid-area: SLIDES; }
+  
+
+  .MENU{
+    background-color: aqua;
+    background-image: -webkit-image-set();
+  }
